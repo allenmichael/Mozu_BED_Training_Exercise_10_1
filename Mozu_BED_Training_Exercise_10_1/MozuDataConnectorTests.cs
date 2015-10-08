@@ -43,7 +43,7 @@ namespace Mozu_BED_Training_Exercise_10_1
 
             //Add Your Code: 
             //Get product type filtered by name 
-            var typePurse = productTypeResource.GetProductTypesAsync(filter: "name sw 'Purse'").Result.Items[0];
+            var typePurse = productTypeResource.GetProductTypesAsync(filter: "Name sw 'Purse'").Result.Items[0];
 
             //Loop through List<AttributeInProductType>
             foreach (var option in typePurse.Options)
